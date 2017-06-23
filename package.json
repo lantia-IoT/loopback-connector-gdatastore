@@ -1,6 +1,6 @@
 {
   "name": "loopback-connector-gdatastore",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Google DataStore connector for loopback",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,10 @@
   },
   "homepage": "https://github.com/impesa/loopback-connector-gdatastore#readme",
   "dependencies": {
-    "strong-globalize": "^2.8.4"
+    "@google-cloud/datastore": "^1.0.2",
+    "loopback-connector": "^4.2.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "mocha": "^3.4.2"
+  }
 }
