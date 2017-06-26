@@ -17,7 +17,26 @@ Google DataStore connector for loopback
 
 ## Currently working operations
 
-    all(), find(), findById()
+    find, findById, create, replaceById, deleteById
 
+## Setup model-config.json
+```
+"options": {
+    "remoting": {
+      "sharedMethods": {
+        "*": false,
+        "find": true,
+        "create": true,
+        "findById": true,
+        "deleteById": true,
+        "replaceById": true
+      }
+    }
+  }
+```
 
-*I'm currently working on this connector, I hope enable more operations in few days*
+## Currently filtering operators
+    and
+  *I hope enable more filtering options in few days*
+
+*I'm currently working on this connector, so I will add more operations in few days*
