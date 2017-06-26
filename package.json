@@ -1,6 +1,6 @@
 {
   "name": "loopback-connector-gdatastore",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Google DataStore connector for loopback",
   "main": "index.js",
   "scripts": {
