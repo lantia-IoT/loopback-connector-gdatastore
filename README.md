@@ -44,7 +44,7 @@ Google DataStore connector for loopback
   "relations": {
     "parentEntity": {
       "model": "parentEntityModel",
-      "foreignKey": "parent"
+      "foreignKey": "parent",
       "type": "belongsTo"
     }
   }
