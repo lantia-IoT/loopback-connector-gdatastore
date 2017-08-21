@@ -6,7 +6,7 @@ Google DataStore connector for loopback
     npm install loopback-connector-gdatastore --save
 
 ## Setup datasources.json
-```
+```json
   "gdatastore": {
     "name": "gdatastore",
     "connector": "loopback-connector-gdatastore",
@@ -15,13 +15,9 @@ Google DataStore connector for loopback
   }
 ```
 
-## Currently working operations
-
-    find, findById, create, replaceById, deleteById
-
 ## Setup model-config.json
-```
-"options": {
+```json
+  "options": {
     "remoting": {
       "sharedMethods": {
         "*": false,
@@ -35,8 +31,27 @@ Google DataStore connector for loopback
   }
 ```
 
+## To support relations in order to create Key references in datastore
+*Add the following configuration to your model*
+```json
+  "properties": {
+    ...
+    "parent": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "relations": {
+    "parentEntity": {
+      "model": "parentEntityModel",
+      "foreignKey": "parent"
+      "type": "belongsTo"
+    }
+  }
+```
+
+## Currently working operations
+    find, findById, create, replaceById, deleteById
+
 ## Currently filtering operators
     and
-  *I hope enable more filtering options in few days*
-
-*I'm currently working on this connector, so I will add more operations in few days*
