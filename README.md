@@ -25,7 +25,8 @@ Google DataStore connector for loopback
         "create": true,
         "findById": true,
         "deleteById": true,
-        "replaceById": true
+        "replaceById": true,
+        "prototype.patchAttributes": true
       }
     }
   }
@@ -51,7 +52,7 @@ Google DataStore connector for loopback
 ```
 
 ## Currently working operations
-    find, findById, create, replaceById, deleteById
+    find, findById, create, updateAttributes, replaceById, deleteById
 
 ## Currently filtering operators
     and
