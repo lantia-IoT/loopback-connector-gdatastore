@@ -1,15 +1,15 @@
-# loopback-connector-gdatastore
-Google DataStore connector for loopback
+# loopback-connector-gcdatastore
+Google Cloud Datastore Connector for Loopback.io
 
 ## Installation
 
-    npm install loopback-connector-gdatastore --save
+    npm install loopback-connector-gcdatastore --save
 
 ## Setup datasources.json
 ```json
-  "gdatastore": {
-    "name": "gdatastore",
-    "connector": "loopback-connector-gdatastore",
+  "gcdatastore": {
+    "name": "gcdatastore",
+    "connector": "loopback-connector-gcdatastore",
     "projectId": "gcloud-project-id",
     "namespace": "datastore-namespace"
   }
@@ -23,6 +23,7 @@ Google DataStore connector for loopback
         "*": false,
         "find": true,
         "create": true,
+        "update": true,
         "findById": true,
         "deleteById": true,
         "replaceById": true,
@@ -52,7 +53,7 @@ Google DataStore connector for loopback
 ```
 
 ## Currently working operations
-    find, findById, create, updateAttributes, replaceById, deleteById
+    find, findById, create, update, replaceById, deleteById
 
 ## Currently filtering operators
-    and
+    and, order
