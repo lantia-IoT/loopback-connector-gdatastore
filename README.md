@@ -25,9 +25,7 @@ Google Cloud Datastore Connector for Loopback.io
         "create": true,
         "update": true,
         "findById": true,
-        "deleteById": true,
-        "replaceById": true,
-        "prototype.patchAttributes": true
+        "deleteById": true
       }
     }
   }
@@ -53,7 +51,7 @@ Google Cloud Datastore Connector for Loopback.io
 ```
 
 ## Currently working operations
-    find, findById, create, update, replaceById, deleteById
+    find, findById, create, update, deleteById
 
 ## Currently filtering operators
-    and, order
+    and, order, sort
